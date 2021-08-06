@@ -1,22 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- External Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Favicon link -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- CSS files  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  Bill
+<body>
+  <div class="d-flex flex-column justify-content-center bg-lightGrayishCyan">
+    <!-- Header -->
+    <div class="container d-flex justify-content-center py-5">
+      <a href="#">
+        <img src="images/logo.svg" alt="">
+      </a>
+    </div>
+    <!-- Card -->
+    <div class="py-5 container col-12 col-md-6 bg-white my-card">
+
+      <div class="row">
+        <!-- Input data -->
+        <div class="col-12 col-md-6">
+          <form class="container" action="">
+            <!-- Bill -->
+            <div class="bill">
+              <label for="bill">Bill</label>
+              <input class="w-100" type="text" name="bill" placeholder="0.00">
+            </div>
+            <!-- Select Tip -->
+            <div class="py-4 tip">
+              <label for="tip">Select Tip %</label>
+              <!-- First line of buttons -->
+              <div class="row justify-content-center py-3">
+                <div class="col-6">
+                  <button class="btn w-100 bg-veryDarkCyan text-white font-weight-bold">5%</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn w-100 bg-veryDarkCyan text-white font-weight-bold">10%</button>
+                </div>
+              </div>
+              <!-- Second line of buttons -->
+              <div class="row justify-content-center py-3">
+                <div class="col-6">
+                  <button class="btn w-100 bg-strongCyan text-white font-weight-bold">15%</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn w-100 bg-veryDarkCyan text-white font-weight-bold">25%</button>
+                </div>
+              </div>
+              <!-- third line of buttons -->
+              <div class="row justify-content-center py-3">
+                <div class="col-6">
+                  <button class="btn w-100 bg-veryDarkCyan text-white font-weight-bold">50%</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn w-100 bg-tempo text-darkGrayishCyan font-weight-bold">Custom</button>
+                </div>
+              </div>
+            </div>
+            <!-- Number of People -->
+            <div class="people">
+              <label for="numOfPeople">Number of People</label>
+              <input class="w-100" type="text" name="numOfPeople" placeholder="0">
+              <!-- <img src="images/icon-person.svg" alt=""> -->
+            </div>
+          </form>
+        </div>
+
+        <!-- Output data -->
+        <div class="col-12 col-md-6 mt-4">
+          <div class="container bg-veryDarkCyan text-white my-border-radius px-4 py-5">
+            <!-- Tip Amount -->
+            <div class="amount">
+              <div class="row">
+                <div class="col-6">
+                  <h3>Tip Amount <span>/ person</span></h3>
+                </div>
+                <div class="col-6">
+                  <h3>$4.27</h3>
+                </div>
+              </div>
+            </div>
+            <!-- Total -->
+            <div class="total">
+              <div class="row">
+                <div class="col-6">
+                  <h3>Total <span>/ person</span></h3>
+                </div>
+                <div class="col-6">
+                  <h3>$32.79</h3>
+                </div>
+              </div>
+            </div>
+            <!-- Reset -->
+            <div class="reset my-border-radius pt-4">
+              <button class="btn bg-strongCyan w-100 text-uppercase font-weight-bold">reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Attribution -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Oscar Estrada</a>.
+    </div>
+  </div>
+
+  <!-- Bill
 
   Select Tip %
   5%
@@ -34,11 +136,7 @@
   Total
   / person
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  Reset -->
 </body>
+
 </html>

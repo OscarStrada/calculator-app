@@ -1,0 +1,86 @@
+:root{
+  /* Colors */
+  --strongCyan: hsl(172, 67%, 45%);  
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyan: hsl(186, 14%, 43%);
+  --darkGrayishCyan2: hsl(184, 14%, 56%);
+  --lightGrayishCyan: hsl(185, 41%, 84%);
+  --lightGrayishCyan2: hsl(189, 41%, 97%);
+  --tempo: #F3F9FA;
+  --strongBlue: hsl(228, 45%, 44%); 
+  /* Typography */
+  --fontSizeInputs: 24px;
+  --fontName: 'Space Mono', monospace;
+}
+
+/* Background colors */
+.bg-lightGrayishCyan {
+  background-color: var(--lightGrayishCyan);
+}
+
+.bg-lightGrayishCyan2 {
+  background-color: var(--lightGrayishCyan);
+}
+
+.bg-strongCyan {
+  background-color: var(--strongCyan);
+}
+
+.bg-veryDarkCyan {
+  background-color: var(--veryDarkCyan);
+}
+
+.bg-darkGrayishCyan {
+  background-color: var(--darkGrayishCyan);
+}
+
+.bg-darkGrayishCyan2 {
+  background-color: var(--darkGrayishCyan2);
+}
+
+.bg-tempo {
+  background-color: var(--tempo);
+}
+
+/* Text color */
+.text-lightGrayishCyan {
+  color: var(--lightGrayishCyan);
+}
+
+.text-lightGrayishCyan2 {
+  color: var(--lightGrayishCyan);
+}
+
+.text-strongCyan {
+  color: var(--strongCyan);
+}
+
+.text-veryDarkCyan {
+  color: var(--veryDarkCyan);
+}
+
+.text-darkGrayishCyan {
+  color: var(--darkGrayishCyan);
+}
+
+.text-darkGrayishCyan2 {
+  color: var(--darkGrayishCyan2);
+}
+
+/* Calculator Styles */
+.my-card {
+  border-radius: 25px 25px 0 0;
+}
+
+.my-border-radius {
+  border-radius: 10px 10px;
+}
+/* Attribution Styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--strongBlue);
+}
